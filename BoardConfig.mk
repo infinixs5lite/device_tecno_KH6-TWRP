@@ -149,10 +149,9 @@ TW_INCLUDE_FASTBOOTD := true
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
-TWRP_EVENT_LOGGING := true
 TARGET_USE_LOGD := true
 
-# Tools / Resetprop and magiskboot
+# TWRP-Specific configuration
 TW_USE_TOOLBOX := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_SUPERSU := true
@@ -173,18 +172,15 @@ TW_INCLUDE_LIBRESETPROP :=true
 TW_INCLUDE_REPACK_TOOL := true
 TW_INCLUDE_LPTOOLS := true
 TW_EXCLUDE_APEX := true
-
-# Density / StatusBar
+TW_EXCLUDE_APEX := true
+TW_INCLUDE_TWRPAPP := false
+TW_EXTRA_LANGUAGES := false
 TW_FRAMERATE := 60
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_MAX_BRIGHTNESS := 1200
 TW_DEFAULT_BRIGHTNESS := 1000
 TW_THEME := portrait_hdpi
-TW_STATUS_ICONS_ALIGN := center
-TW_CUSTOM_CPU_POS := "300"
-TW_CUSTOM_CLOCK_POS := "70"
-TW_CUSTOM_BATTERY_POS := "790"
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
